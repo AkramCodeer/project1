@@ -1,0 +1,118 @@
+.container {
+  width: 95%;
+  max-width: 1424px;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+.transactions-table th, .transactions-table td {
+  border: 1px solid #ddd; /* Add borders to table cells */
+  padding: 12px;
+  text-align: left;
+}
+
+.transactions-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.transactions-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.transactions-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.filter-search {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.filter-search input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.filter-search button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.filter-search button:hover {
+  background-color: #0056b3;
+}
+
+.filter-search select {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  color: #333;
+  appearance: none;
+}
+
+.filter-search select:hover {
+  border-color: #aaa;
+}
+
+.filter-search select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.filter-search select::before {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.pagination {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination li button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.pagination li button:hover {
+  background-color: #ddd;
+}
+
+.pagination li.active button {
+  background-color: #007bff;
+  color: white;
+}
